@@ -1,0 +1,110 @@
+html{
+  background-color: #353b48;
+}
+body {
+  margin: 0;
+  align-content: center;
+}
+.page {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.logo {
+  float: left;
+  margin: 50px;
+  max-height: 50px;
+}
+.play {
+  margin: 50px;
+  float: right;
+  padding: 15px;
+  border-radius: 50px;
+  border: 0px;
+}
+.play:hover {
+  background-color: #ffeaa7;
+  cursor: pointer;
+}
+.discord {
+  float: right;
+  height: 500px;
+  width: 19%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.content {
+  float: left;
+  background-color: #ffffff;
+  min-height: 700px;
+  width: 80%;
+  margin-top: 1%;
+  border-radius: 10px;
+}
+.header {
+  float: left;
+  background-color: #fdcb6e;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 50px 50px 10px 10px;
+}
+.footer {
+  float: left;
+  margin-top: 1%;
+  background-color: #fdcb6e;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 10px 10px 50px 50px;
+}
+.navigation {
+  float: left;
+  background-color: #555;
+  width: 100%;
+  margin-top: 1%;
+  min-height: 50px;
+  border-radius: 10px;
+}
+.search {
+  float: right;
+  width: 24%;
+  margin-left: 1%;
+}
+.search > .button {
+  width: 25%;
+}
+.search > .textarea {
+  width: 70%;
+}
+.search input {
+  border-radius: 50px;
+  height: 40px;
+  margin-top: 5px;
+  border: 0;
+}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 15px;
+  width: 25%;
+  display: inline-grid;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 50px;
+  text-align: center;
+}

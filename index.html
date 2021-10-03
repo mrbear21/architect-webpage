@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="includes/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Сервер настроения</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <img class="logo" src="includes/atect-logo.png" alt="logo">
+        <button class="play" type="button" name="button">Скопировать айпи</button>
+      </div>
+      <div class="navigation">
+
+        <button class="tablink" onclick="openTab('Home', this)" id="defaultOpen">Дом</button>
+        <button class="tablink" onclick="openTab('Donate', this)">Донат</button>
+        <button class="tablink" onclick="openTab('Players', this)">Архитекторяни</button>
+        <form class="search" action="https://google.com/search">
+          <input class="textarea" type="text" name="q" placeholder=" Ник, Группа, ID">
+          <input class="button" type="submit" name="btnK" value="🔍">
+        </form>
+      </div>
+
+        <div id="Home" class="tabcontent content">
+          <h1>Привет, архитекторянин!</h1>
+          <p>Ты на сервере добра, творчества и крутого настроения!</p>
+          https://discord.com/api/guilds/394122683136212993/widget.json
+        </div>
+        <iframe src="https://discord.com/widget?id=394122683136212993&theme=light" class="discord" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
+
+
+        <div id="Donate" class="tabcontent content">
+          <p>Donate is the capital of France.</p>
+        </div>
+
+        <div id="Players" class="tabcontent content">
+          <p>Players is the capital of Japan.</p>
+        </div>
+
+        <div class="footer">
+          <center>
+          atect.top
+          </center>
+        </div>
+
+        <script>
+        function openTab(cityName,elmnt) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(cityName).style.display = "block";
+          elmnt.style.backgroundColor = "#777";
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+  </body>
+</html>
