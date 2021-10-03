@@ -11,35 +11,41 @@
     <div class="page">
       <div class="header">
         <img class="logo" src="includes/atect-logo.png" alt="logo">
-        <button class="play" type="button" name="button">Скопировать айпи</button>
+        <button class="play" type="button" name="button">play.atect.top</button>
       </div>
       <div class="navigation">
 
         <button class="tablink" onclick="openTab('Home', this)" id="defaultOpen">Дом</button>
         <button class="tablink" onclick="openTab('Donate', this)">Донат</button>
-        <button class="tablink" onclick="openTab('Players', this)">Архитекторяни</button>
+    <!--    <button class="tablink" onclick="openTab('Players', this)">Архитекторяни</button>
         <form class="search" action="https://google.com/search">
           <input class="textarea" type="text" name="q" placeholder=" Ник, Группа, ID">
           <input class="button" type="submit" name="btnK" value="🔍">
         </form>
+        -->
       </div>
 
         <div id="Home" class="tabcontent content">
           <h1>Привет, архитекторянин!</h1>
           <p>Ты на сервере добра, творчества и крутого настроения!</p>
-          https://discord.com/api/guilds/394122683136212993/widget.json
+      <!--    <iframe src="https://discord.com/widget?id=394122683136212993&theme=light" class="discord" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
         </div>
-        <iframe src="https://discord.com/widget?id=394122683136212993&theme=light" class="discord" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
 
 
 
         <div id="Donate" class="tabcontent content">
-          <p>Donate is the capital of France.</p>
+          <h1>Поддержать сервер</h1>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <form action="https://gamesdonate.com/pay/c795a97daca2d733d9" method="POST">
+          <p><input type="text" id="account" name="account" placeholder="Никнейм (учитывая регистр)"></p>
+          <p><select id="good" name="good"></select></p>
+          <p><button type="submit" id="ok"><i class="fas fa-shopping-cart"></i>Продолжить</button></p>
+          <script src="https://gamesdonate.com/assets/widget-php.php?token=c795a97daca2d733d9"></script>
+          </form>
         </div>
 
         <div id="Players" class="tabcontent content">
-          <p>Players is the capital of Japan.</p>
+          <h1>Все будет, но не сразу</h1>
         </div>
 
         <div class="footer">

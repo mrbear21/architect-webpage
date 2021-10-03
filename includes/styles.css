@@ -7,10 +7,7 @@ body {
 }
 .page {
   float: left;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  width: 100%;
 }
 .logo {
   float: left;
@@ -28,35 +25,26 @@ body {
   background-color: #ffeaa7;
   cursor: pointer;
 }
-.discord {
-  float: right;
-  height: 500px;
-  width: 19%;
-  margin-left: 1%;
-  margin-top: 1%;
-}
 .content {
   float: left;
   background-color: #ffffff;
-  min-height: 700px;
-  width: 80%;
+  width: 100%;
+  min-height: 550px;
   margin-top: 1%;
-  border-radius: 10px;
 }
 .header {
   float: left;
   background-color: #fdcb6e;
   min-height: 150px;
   width: 100%;
-  border-radius: 50px 50px 10px 10px;
 }
 .footer {
   float: left;
   margin-top: 1%;
   background-color: #fdcb6e;
   min-height: 150px;
+  line-height: 150px;
   width: 100%;
-  border-radius: 10px 10px 50px 50px;
 }
 .navigation {
   float: left;
@@ -64,7 +52,6 @@ body {
   width: 100%;
   margin-top: 1%;
   min-height: 50px;
-  border-radius: 10px;
 }
 .search {
   float: right;
@@ -84,6 +71,24 @@ body {
   border: 0;
 }
 
+#Donate button {
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+input {
+  height: 50px;
+  width: 40%;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+select {
+  height: 50px;
+  width: 40%;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
 
 .tablink {
   background-color: #555;
