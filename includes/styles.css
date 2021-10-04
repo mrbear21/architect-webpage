@@ -51,16 +51,22 @@ body {
 .tabcontent {
   display: none;
   padding: 50px;
+  min-height: 500px;
   text-align: center;
   float: left;
   background-color: #ffffff;
   width: 100%;
-  min-height: 690px;
 }
 .widget {
   float: left;
   margin-left: 35%;
   width: 30%;
+}
+.box {
+  float: left;
+  margin: 1%;
+  width: 410px;
+  max-width: 48%;
 }
 button {
   padding: 10px;
