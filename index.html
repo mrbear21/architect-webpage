@@ -11,10 +11,10 @@
   <body>
     <div class="page">
       <div class="header">
-        <img class="logo" src="includes/atect-logo.png" alt="logo">
-
+        <img style="float: left;margin: 50px;max-height: 50px;" src="includes/atect-logo.png" alt="logo">
+  			<button style="margin: 50px;float: right;" onclick="copyToClipboard('#p1')">play.atect.top</button>
+        <div style="float:right; line-height:150px;" id="rest">Loading ...</div>
         <p id="p1" style="display: none;">play.atect.top</p>
-  			<button class="play" onclick="copyToClipboard('#p1')">play.atect.top</button>
   				<script>
   					function copyToClipboard(element) {
   					  var $temp = $("<input>");
@@ -27,7 +27,6 @@
   				</script>
       </div>
       <div class="navigation">
-
         <button class="tablink" onclick="openTab('Home', this)" id="defaultOpen">Дом</button>
         <button class="tablink" onclick="openTab('Donate', this)">Донат</button>
         <button class="tablink" onclick="openTab('Rules', this)">Правила</button>
@@ -38,44 +37,54 @@
         </form>
         -->
       </div>
-
         <div id="Home" class="tabcontent" style="display: block;">
           <h1>Привет, архитекторянин!</h1>
           <p>Ты на сервере добра, творчества и крутого настроения!</p>
-        </div>
+
+          <script>
+            var url = "https://api.minetools.eu/ping/play.atect.top";
+            $.getJSON(url, function(r) {
+              //data is the JSON string
+              if (r.error) {
+                $('#rest').html('Сервер оффлайн');
+                return false;
+              }
+              var pl = '';
+              if (r.players.sample.length > 0) {
+                pl = '<br>OP: ' + r.players.sample[0].name;
+              }
+              $('#rest').html('<b>Онлайн:</b> ' + r.players.online + pl);
+              $('#favicon').attr('src', r.favicon);
+            });
+          </script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
 
-        <div id="Donate" class="tabcontent">
-          <h1>Поддержать сервер</h1>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <form action="https://gamesdonate.com/pay/c795a97daca2d733d9" method="POST">
-          <p><input type="text" id="account" name="account" placeholder="Никнейм (учитывая регистр)"></p>
-          <p><select id="good" name="good"></select></p>
-          <p><button type="submit" id="ok"><i class="fas fa-shopping-cart"></i>Продолжить</button></p>
-          <script src="https://gamesdonate.com/assets/widget-php.php?token=c795a97daca2d733d9"></script>
-          </form>
-        </div>
-
-        <div id="Players" class="tabcontent">
-          <h1>Все будет, но не сразу</h1>
-        </div>
-
-        <div id="Rules" class="tabcontent">
-            <h1>Правила нашего комьюнити</h1>
-
-            <iframe src="includes/rules.html" frameborder="0" style="overflow:hidden;height:140vh;width:100%" height="100vh" width="100%"></iframe>
-
-        </div>
-
-
-        <div class="footer">
-          <center>
-          atect.top
-          </center>
-        </div>
-
-        <script>
+      </div>
+      <div id="Donate" class="tabcontent">
+        <h1>Поддержать сервер</h1>
+        <br><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <form class="widget" action="https://gamesdonate.com/pay/c795a97daca2d733d9" method="POST">
+        <p><input type="text" id="account" name="account" placeholder="Никнейм (учитывая регистр)"></p>
+        <p><select id="good" name="good"></select></p>
+        <p><button style="float: right;" type="submit" id="ok"><i class="fas fa-shopping-cart"></i>Продолжить</button></p>
+        <script src="https://gamesdonate.com/assets/widget-php.php?token=c795a97daca2d733d9"></script>
+        </form>
+      </div>
+      <div id="Players" class="tabcontent">
+        <h1>Все будет, но не сразу</h1>
+      </div>
+      <div id="Rules" class="tabcontent">
+          <h1>Правила нашего комьюнити</h1>
+          <iframe src="includes/rules.html" frameborder="0" style="overflow:hidden;height:140vh;width:100%" height="100vh" width="100%"></iframe>
+      </div>
+      <div class="footer">
+        <center>
+        atect.top
+        </center>
+      </div>
+      <script>
         function openTab(tabName,elmnt) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
@@ -88,11 +97,9 @@
           }
           document.getElementById(tabName).style.display = "block";
           elmnt.style.backgroundColor = "#777";
-
         }
-        // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-        </script>
+      </script>
     </div>
   </body>
 </html>
