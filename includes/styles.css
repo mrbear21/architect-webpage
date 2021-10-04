@@ -4,6 +4,8 @@ html{
 body {
   margin: 0;
   align-content: center;
+  margin:0px;
+  padding:0px;
 }
 .page {
   float: left;
