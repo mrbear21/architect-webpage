@@ -12,6 +12,7 @@
     <meta property="og:description" content="Необычный сервер с необычной историей">
     <meta property="og:image" content="includes/logo.png">
     <title>Сервер настроения</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body>
     <div class="page">
@@ -38,31 +39,6 @@
           <h2 style="color:#333;">Ты на сервере добра, творчества и крутого настроения!</h2> <p> Ознакомься с нашей историей, <button style="padding:5px;" onclick="openTab('Rules', this)">прочитай правила</button> и бегом на сервер! </p>
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OIF5BxdVnps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div id="Social" class="tabcontent">
-        <center>
-          <div class="box">
-              <h3>Присоединяйся в Discord!</h3> <br>
-              <iframe src="https://discord.com/widget?id=394122683136212993&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-          </div>
-          <div class="box">
-              <h3>Общайся в Telegram чате!</h3> <br>
-              <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-discussion="atecttop/4" data-comments-limit="5" data-height="400" data-colorful="1" data-dark="1"></script>
-          </div>
-          <div class="box">
-              <h3>Снимай мемы в TikTok!</h3> <br>
-              <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@architect.memes/video/6983615554993048837" data-video-id="6983615554993048837" style="float: left; margin-top: -3px; background-color: #333; height: 400px; width: 100%;" > <section style="display:none;"> <a target="_blank" title="@architect.memes" href="https://www.tiktok.com/@architect.memes">@architect.memes</a> <p>лучший креатив сервер play.atect.top:25565 <a title="майнкрафт" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82">##майнкрафт</a> <a title="майнкрафтприколы" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82%D0%BF%D1%80%D0%B8%D0%BA%D0%BE%D0%BB%D1%8B">##майнкрафтприколы</a> <a title="майнкрафтмемы" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82%D0%BC%D0%B5%D0%BC%D1%8B">##майнкрафтмемы</a></p> <a target="_blank" title="♬ original sound - мемы про архитект" href="https://www.tiktok.com/music/original-sound-6983615260607466245">♬ original sound - мемы про архитект</a> </section> </blockquote>
-              <script async src="https://www.tiktok.com/embed.js"></script>
-          </div>
-          <div class="box">
-              <h3>Делись творчеством в VK!</h3> <br>
-              <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-              <div id="vk_groups"></div>
-              <script type="text/javascript">
-              VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, no_cover: 1, width: "auto", height: "400", color1: '2C2C2C', color2: 'FFFFFF', color3: '00A3DF'}, 164214598);
-              </script>
-          </div>
-        </center>
-      </div>
       <div id="Donate" class="tabcontent">
         <h1>Поддержать сервер</h1>
         <br><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -80,54 +56,35 @@
           <h1>Правила нашего комьюнити</h1>
           <iframe src="includes/rules.html" frameborder="0" style="overflow:hidden;height:140vh;width:100%" height="100vh" width="100%"></iframe>
       </div>
+      <script src="includes/scripts.js"></script>
+      <div id="Social" class="tabcontent">
+        <div class="box">
+            <h3>Присоединяйся в Discord!</h3> <br>
+            <iframe src="https://discord.com/widget?id=394122683136212993&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div class="box">
+            <h3>Общайся в Telegram чате!</h3> <br>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-discussion="atecttop/4" data-comments-limit="5" data-height="500" data-colorful="1" data-dark="1"></script>
+        </div>
+        <div class="box">
+            <h3>Снимай мемы в TikTok!</h3> <br>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@architect.memes/video/6983615554993048837" data-video-id="6983615554993048837" style="top: -20px; height: 480px; width: 100%;" > <section style="display:none;"> <a target="_blank" title="@architect.memes" href="https://www.tiktok.com/@architect.memes">@architect.memes</a> <p>лучший креатив сервер play.atect.top:25565 <a title="майнкрафт" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82">##майнкрафт</a> <a title="майнкрафтприколы" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82%D0%BF%D1%80%D0%B8%D0%BA%D0%BE%D0%BB%D1%8B">##майнкрафтприколы</a> <a title="майнкрафтмемы" target="_blank" href="https://www.tiktok.com/tag/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82%D0%BC%D0%B5%D0%BC%D1%8B">##майнкрафтмемы</a></p> <a target="_blank" title="♬ original sound - мемы про архитект" href="https://www.tiktok.com/music/original-sound-6983615260607466245">♬ original sound - мемы про архитект</a> </section> </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div class="box">
+            <h3>Делись творчеством в VK!</h3> <br>
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+            <div id="vk_groups"></div>
+            <script type="text/javascript">
+            VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, no_cover: 1, width: "400", height: "500", color1: '2C2C2C', color2: 'FFFFFF', color3: '00A3DF'}, 164214598);
+            </script>
+        </div>
+      </div>
       <div class="footer">
         <center>
         atect.top
         </center>
       </div>
-      <script>
-        var url = "https://api.minetools.eu/ping/play.atect.top";
-        $.getJSON(url, function(r) {
-          //data is the JSON string
-          if (r.error) {
-            $('#rest').html('Сервер оффлайн');
-            return false;
-          }
-          var pl = '';
-          if (r.players.sample.length > 0) {
-            pl = '<br>OP: ' + r.players.sample[0].name;
-          }
-          $('#rest').html('Онлайн: <b>' + r.players.online + pl+'</b>');
-          $('#favicon').attr('src', r.favicon);
-        });
-        function copyToClipboard(element) {
-          var $temp = $("<input>");
-          $("body").append($temp);
-          $temp.val($(element).text()).select();
-          document.execCommand("copy");
-          $temp.remove();
-          alert("Айпи play.atect.top успешно скопировано! Зайдите в список серверов, нажмите на Добавить сервер и в поле Адрес сервера вставьте скопированный айпи.");
-        }
-        function openTab(tabName,elmnt) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          for (i = 0; i < tabcontent.length; i++) {
-            if (tabcontent[i].id == tabName) {
-              tabcontent[i].style.display = "block";
-            }
-          }
-          elmnt.style.backgroundColor = "#777";
-        }
-        document.getElementById("defaultOpen").click();
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </div>
   </body>
 </html>

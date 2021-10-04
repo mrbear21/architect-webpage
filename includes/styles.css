@@ -63,10 +63,14 @@ body {
   width: 30%;
 }
 .box {
-  float: left;
-  margin: 10px;
-  width: 350px;
-  max-width: 45%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 button {
   padding: 10px;
