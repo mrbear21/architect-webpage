@@ -35,7 +35,7 @@ body {
 }
 .footer {
   float: left;
-  margin-top: 1%;
+  margin-top: 10px;
   background-color: #fdcb6e;
   min-height: 50px;
   line-height: 50px;
@@ -45,7 +45,7 @@ body {
   float: left;
   background-color: #555;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 10px;
   min-height: 50px;
 }
 .search {
@@ -109,6 +109,6 @@ select {
   float: left;
   background-color: #ffffff;
   width: 100%;
-  min-height: 650px;
-  margin-top: 1%;
+  min-height: 690px;
+  margin-top: 10px;
 }
