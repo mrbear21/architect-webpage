@@ -64,8 +64,8 @@ body {
 }
 .box {
   float: left;
-  margin: 1%;
-  width: 400px;
+  margin: 10px;
+  width: 350px;
   max-width: 45%;
 }
 button {
