@@ -37,6 +37,7 @@ function openTab(tabName) {
       tabcontent[i].style.display = "block";
     }
   }
+  window.location.href = window.location.href.split("#")[0]+'#'+tabName;
   tablinks = document.getElementsByClassName(tabName);
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "#777";
@@ -49,6 +50,10 @@ function getLink(url) {
   switch(url) {
     case "discord": return "https://discord.gg/yrCBKbJ";
     case "telegram": return "https://t.me/atectchat";
+    case "store": return "../index.html#donate";
+    case "vote": return "../index.html#vote";
+    case "rules": return "../index.html#rules";
+    case "vk": return "https://vk.com/atect";
     default: return "../index.html";
   }
 }

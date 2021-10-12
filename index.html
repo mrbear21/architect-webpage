@@ -23,11 +23,11 @@
         <p id="p1" style="display: none;">play.atect.top</p>
       </div>
       <div class="navigation">
-        <button class="tablink Home" type="button" onclick="openTab('Home')" id="defaultOpen">Дом</button>
-        <button class="tablink Donate" type="button" onclick="openTab('Donate')">Донат</button>
-        <button class="tablink Rules" type="button" onclick="openTab('Rules')">Правила</button>
-        <button class="tablink Social" type="button" onclick="openTab('Social')">Комьюнити</button>
-        <button class="tablink Monitorings" type="button" onclick="openTab('Monitorings')">Проголосовать</button>
+        <button class="tablink home" type="button" onclick="openTab('home')" id="defaultOpen">Дом</button>
+        <button class="tablink donate" type="button" onclick="openTab('donate')">Донат</button>
+        <button class="tablink rules" type="button" onclick="openTab('rules')">Правила</button>
+        <button class="tablink social" type="button" onclick="openTab('social')">Комьюнити</button>
+        <button class="tablink vote" type="button" onclick="openTab('vote')">Проголосовать</button>
         <!--<button class="tablink" onclick="openTab('Players', this)">Архитекторяни</button>
         <form class="search" action="https://google.com/search">
           <input class="textarea" type="text" name="q" placeholder=" Ник, Группа, ID">
@@ -35,12 +35,12 @@
         </form>
         -->
       </div>
-      <div id="Home" class="tabcontent" style="display: block;">
+      <div id="home" class="tabcontent" style="display: block;">
           <h1><b>Привет, архитекторянин!</b></h1>
           <h2 style="color:#333;">Ты на сервере добра, творчества и крутого настроения!</h2> <p> Ознакомься с нашей историей, <button style="padding:5px;" onclick="openTab('Rules')">прочитай правила</button> и бегом на сервер! </p>
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OIF5BxdVnps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div id="Donate" class="tabcontent">
+      <div id="donate" class="tabcontent">
         <h1>Поддержать сервер</h1>
         <br><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <form class="widget" action="https://gamesdonate.com/pay/c795a97daca2d733d9" method="POST">
@@ -50,19 +50,14 @@
         <script src="https://gamesdonate.com/assets/widget-php.php?token=c795a97daca2d733d9"></script>
         </form>
       </div>
-      <div id="Players" class="tabcontent">
+      <div id="players" class="tabcontent">
         <h1>Все будет, но не сразу</h1>
       </div>
-      <div id="Rules" class="tabcontent">
+      <div id="rules" class="tabcontent">
           <h1>Правила нашего комьюнити</h1>
           <iframe src="includes/rules.html" frameborder="0" style="overflow:hidden;height:140vh;width:100%" height="100vh" width="100%"></iframe>
       </div>
-      <script src="includes/scripts.js"></script>
-      <script type="text/javascript">
-        getServerOnline();
-        document.getElementById("defaultOpen").click();
-      </script>
-      <div id="Social" class="tabcontent">
+      <div id="social" class="tabcontent">
         <div class="box">
             <h3>Присоединяйся в Discord!</h3> <br>
             <iframe src="https://discord.com/widget?id=394122683136212993&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -85,7 +80,7 @@
             </script>
         </div>
       </div>
-      <div id="Monitorings" class="tabcontent">
+      <div id="vote" class="tabcontent">
     			<a class='blockquote' href='http://minecraftrating.ru/projects/architectcreative/' class='link' target="_blank"> MinecraftRating</a>
     			<a class='blockquote' href='http://monitoringminecraft.ru/top/atect/vote' class='link' target="_blank"> MonitoringMinecraft</a>
     			<a class='blockquote' href='https://topcraft.ru/servers/8925/?voting=8925' class='link' target="_blank"> TopCraft</a>
@@ -98,6 +93,15 @@
     			<a class='blockquote' href='https://mc-monitor.ru/server/5605' class='link' target="_blank"> MC-Monitor</a>
     			<a class='blockquote' href='https://mcsmonitoring.com/projects/35#1' class='link' target="_blank"> MCSMonitoring</a>
       </div>
+      <script src="includes/scripts.js"></script>
+      <script type="text/javascript">
+        getServerOnline();
+        if (document.getElementsByClassName(window.location.href.split("#")[1]).length > 0) {
+          document.getElementsByClassName(window.location.href.split("#")[1])[0].click();
+        } else {
+          document.getElementById("defaultOpen").click();
+        }
+      </script>
       <div class="footer">
         <center>
         atect.top
