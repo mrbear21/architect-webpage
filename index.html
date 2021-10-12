@@ -23,7 +23,7 @@
         <p id="p1" style="display: none;">play.atect.top</p>
       </div>
       <div class="navigation">
-        <button class="tablink home" type="button" onclick="openTab('home')" id="defaultOpen">Дом</button>
+        <button class="tablink home" type="button" onclick="openTab('home')">Дом</button>
         <button class="tablink donate" type="button" onclick="openTab('donate')">Донат</button>
         <button class="tablink rules" type="button" onclick="openTab('rules')">Правила</button>
         <button class="tablink social" type="button" onclick="openTab('social')">Комьюнити</button>
@@ -35,7 +35,8 @@
         </form>
         -->
       </div>
-      <div id="home" class="tabcontent" style="display: block;">
+      <div id="echo" class="tabcontent" style="display: block;"><b>🚀 Loading...</b></div>
+      <div id="home" class="tabcontent">
           <h1><b>Привет, архитекторянин!</b></h1>
           <h2 style="color:#333;">Ты на сервере добра, творчества и крутого настроения!</h2> <p> Ознакомься с нашей историей, <button style="padding:5px;" onclick="openTab('rules')">прочитай правила</button> и бегом на сервер! </p>
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OIF5BxdVnps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -97,9 +98,9 @@
       <script type="text/javascript">
         getServerOnline();
         if (document.getElementsByClassName(window.location.href.split("#")[1]).length > 0) {
-          document.getElementsByClassName(window.location.href.split("#")[1])[0].click();
+          openTab(window.location.href.split("#")[1])[0];
         } else {
-          document.getElementById("defaultOpen").click();
+          openTab("home");
         }
       </script>
       <div class="footer">
