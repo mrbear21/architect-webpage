@@ -42,7 +42,8 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 15px;
-  min-width: 5%;
+  width: 150px;
+  max-width: 25%;
   display: inline-grid;
 }
 .tablink:hover {
@@ -58,9 +59,9 @@ body {
   width: 100%;
 }
 .widget {
-  float: left;
-  margin-left: 35%;
-  width: 30%;
+  width: 500px;
+  display: inline-block;
+  text-align: center;
 }
 .box {
   display: inline-block;

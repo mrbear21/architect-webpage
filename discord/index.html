@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Переходим...</title>
+  </head>
+  <body>
+    <script src="../includes/scripts.js"></script>
+    <script>
+      var url = window.location.href;
+      window.location.href = getLink(getFolder(url));
+    </script>
+  </body>
+</html>
