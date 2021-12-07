@@ -44,7 +44,7 @@ function openTab(tabName) {
   }
 }
 function getFolder(url) {
-  return url.split("/")[url.split("/").length-3]
+  return url.split("atect.top/")[1]
 }
 function getLink(url) {
   switch(url) {
