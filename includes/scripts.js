@@ -44,7 +44,7 @@ function openTab(tabName) {
   }
 }
 function getFolder(url) {
-  return url.split("/")[url.split("/").length]
+  return url.split("/")[url.split("/").length-3]
 }
 function getLink(url) {
   switch(url) {
