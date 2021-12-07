@@ -44,7 +44,7 @@ function openTab(tabName) {
   }
 }
 function getFolder(url) {
-  return url.split("/")[url.split("/").length-2]
+  return url.split("/")[url.split("/").length-1]
 }
 function getLink(url) {
   switch(url) {
@@ -56,7 +56,7 @@ function getLink(url) {
     case "rules": return "../index.html#rules";
     case "vk": return "https://vk.com/atect";
     case "youtube": return "https://www.youtube.com/channel/UCN4NA9gmbWW8C6j4kdnWQiw";
-  //  default: return "../index.html";
+    default: return "../index.html";
   }
 }
 function getUrlParams(url) {
