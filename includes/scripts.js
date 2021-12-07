@@ -49,6 +49,7 @@ function getFolder(url) {
 function getLink(url) {
   switch(url) {
     case "discord": return "https://discord.gg/yrCBKbJ";
+    case "support": return "https://discord.gg/dNnCfWv9p4";
     case "telegram": return "https://t.me/atectchat";
     case "store": return "../index.html#donate";
     case "vote": return "../index.html#vote";

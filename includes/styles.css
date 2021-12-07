@@ -94,3 +94,51 @@ select {
   min-width: 100%;
   border: 1px solid gray;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  display: inline-block;
+}
+ul a {
+  cursor: pointer;
+  width: 100%;
+  color: grey;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 12px 8px 12px 40px;
+  text-align: left;
+  list-style-type: none;
+  background: #ffffff;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul a:nth-child(odd) {
+  background: #dfe6e9;
+}
+ul a:hover {
+  background: #dfe4ea;
+  color: #000;
+}
+ul a.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul a.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 16px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}

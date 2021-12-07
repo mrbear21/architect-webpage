@@ -28,6 +28,7 @@
         <button class="tablink rules" type="button" onclick="openTab('rules')">Правила</button>
         <button class="tablink social" type="button" onclick="openTab('social')">Комьюнити</button>
         <button class="tablink vote" type="button" onclick="openTab('vote')">Проголосовать</button>
+        <button class="tablink" style="float: right;" type="button" onclick="location.href='https://atect.top/support';">Помощь</button>
         <!--<button class="tablink" onclick="openTab('Players', this)">Архитекторяни</button>
         <form class="search" action="https://google.com/search">
           <input class="textarea" type="text" name="q" placeholder=" Ник, Группа, ID">
@@ -81,19 +82,34 @@
             </script>
         </div>
       </div>
+
       <div id="vote" class="tabcontent">
-    			<a class='blockquote' href='http://minecraftrating.ru/projects/architectcreative/' class='link' target="_blank"> MinecraftRating</a>
-    			<a class='blockquote' href='http://monitoringminecraft.ru/top/atect/vote' class='link' target="_blank"> MonitoringMinecraft</a>
-    			<a class='blockquote' href='https://topcraft.ru/servers/8925/?voting=8925' class='link' target="_blank"> TopCraft</a>
-    			<a class='blockquote' href='http://minecraftrating.ru/vote/63353/' class='link' target="_blank"> MinecraftRating</a>
-    			<a class='blockquote' href='https://tmonitoring.com/server/architect-mini-igry/' class='link' target="_blank"> TMonitoring</a>
-    			<a class='blockquote' href='https://hotmc.ru/vote-190411' class='link' target="_blank"> HotMC</a>
-    			<a class='blockquote' href='https://mc-monitoring.info/server/vote/11211' class='link' target="_blank"> MC-Monitoring</a>
-    			<a class='blockquote' href='https://mc-servera.net/vote/90530' class='link' target="_blank"> MC-Servera</a>
-    			<a class='blockquote' href='https://misterlauncher.org/vote/4731/' class='link' target="_blank"> MisterLauncher</a>
-    			<a class='blockquote' href='https://mc-monitor.ru/server/5605' class='link' target="_blank"> MC-Monitor</a>
-    			<a class='blockquote' href='https://mcsmonitoring.com/projects/35#1' class='link' target="_blank"> MCSMonitoring</a>
+          <h1>Голосуй за сервер и получи приятные бонусы</h1><br>
+        <ul>
+           <a href='http://minecraftrating.ru/projects/architectcreative/' target="_blank"> MinecraftRating</a>
+           <a href='http://monitoringminecraft.ru/top/atect/vote' target="_blank"> MonitoringMinecraft</a>
+           <a href='https://topcraft.ru/servers/8925/?voting=8925' target="_blank"> TopCraft</a>
+           <a href='http://minecraftrating.ru/vote/63353/' target="_blank"> MinecraftRating</a>
+           <a href='https://tmonitoring.com/server/architect-mini-igry/' target="_blank"> TMonitoring</a>
+           <a href='https://hotmc.ru/vote-190411' target="_blank"> HotMC</a>
+           <a href='https://mc-monitoring.info/server/vote/11211'  target="_blank"> MC-Monitoring</a>
+           <a href='https://mc-servera.net/vote/90530' target="_blank"> MC-Servera</a>
+           <a href='https://misterlauncher.org/vote/4731/' target="_blank"> MisterLauncher</a>
+           <a href='https://mc-monitor.ru/server/5605' target="_blank"> MC-Monitor</a>
+           <a href='https://mcsmonitoring.com/projects/35#1' target="_blank"> MCSMonitoring</a>
+        </ul>
       </div>
+
+      <script>
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'A') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+      </script>
+
+
       <script src="includes/scripts.js"></script>
       <script type="text/javascript">
         getServerOnline();
