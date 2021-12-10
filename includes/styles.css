@@ -66,12 +66,23 @@ body {
 .box {
   display: inline-block;
   text-align: center;
-  margin: 20px;
-  width: 400px;
-  height: 600px;
+  width: 80%;
+  min-height: 150px;
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
+  border-radius: 0.5em;
+}
+.box h3 {
+  display: inline-block;
+  color: #fff;
+  width: 50%;
+  margin: 5%;
+  color: rgba(255,255,255);
+  text-shadow: 0 0 30px rgba(0,0,0,.5), 0 0 10px rgba(0,0,0,.5);
+}
+.box iframe {
+  display: inline-block;
 }
 button {
   padding: 10px;

@@ -55,6 +55,7 @@ function getLink(url) {
     case "vote": return "../index.html#vote";
     case "rules": return "../index.html#rules";
     case "vk": return "https://vk.com/atect";
+    case "tiktok": return "https://www.tiktok.com/@architect.memes";
     case "youtube": return "https://www.youtube.com/channel/UCN4NA9gmbWW8C6j4kdnWQiw";
     default: return "../index.html";
   }
