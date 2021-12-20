@@ -57,6 +57,7 @@ function getLink(url) {
     case "vk": return "https://vk.com/atect";
     case "tiktok": return "https://www.tiktok.com/@architect.memes";
     case "youtube": return "https://www.youtube.com/channel/UCN4NA9gmbWW8C6j4kdnWQiw";
+    case "team": return "https://docs.google.com/spreadsheets/d/1ha467k3H_yFX8Ns7JIXsB4ye-kyAQrtcjLoMa0kqheQ/edit?usp=sharing";
     default: return "../index.html";
   }
 }
