@@ -1,5 +1,5 @@
 function getServerOnline() {
-  var url = "https://api.minetools.eu/ping/play.atect.top";
+  var url = "https://api.minetools.eu/ping/archi.quest";
   $.getJSON(url, function(r) {
     //data is the JSON string
     if (r.error) {
